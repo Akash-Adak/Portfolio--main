@@ -24,7 +24,9 @@
                 <a href="#Skills" style="--i:3">Skills</a>
                 <a href="#Projects" style="--i:4">Projects</a>
                 <a href="#Contact" style="--i:5">Contact</a>
+               
             </nav>
+            <button id="themeToggle" style="--i:11" class="btn-box" >Toggle Theme</button>
         </header>
 
 
@@ -37,11 +39,11 @@
                     passionate in <span class="text"></span></h4>
                 
                 <div class="img">
-                     <img src="./img/a22.jpeg" class="responsive">
+                     <img src="./img/a22.jpeg" class="responsive change">
                 </div>
 
                 <div class="home-sci">
-                    <a href="https://www.linkedin.com/in/akash-adak-b9334b2b9/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/akash-adak-b9334b2b9/"style="--i:7" target="_blank"><i class='bx bxl-linkedin' ></i></a>
                     <a href="https://www.instagram.com/akashadak28/"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61550497406127"style="--i:9" target="_blank"><i class='bx bxl-facebook'></i></a>
                     <a href="https://github.com/Akash-Adak"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
@@ -156,6 +158,7 @@
         </section>
 
         <section id="Projects">
+
             <div id="portfolio" class="services">
                 <div class="main-text" id="serv">
                     <h2>My <span>Projects</span></h2>
@@ -202,7 +205,7 @@
                                    portfolio is a web application that allows users to manage their projects and their tasks
                                 </p>
 
-                                <a href="https://github.com/Akash-Adak/Portfolio--main.git"><i class='bx bx-desktop' style="color: aliceblue;"></i></a>
+                                <a href="https://github.com/Akash-Adak/music-player.git"><i class='bx bx-desktop' style="color: aliceblue;"></i></a>
                                 
                             </div>
                         </div>
@@ -253,20 +256,46 @@
 
 
         <section class="contacts" id="Contact">
-            <div class="contact-text">
-                <h2>Contact <span>Me</span></h2>
-                <h4>Let's Work Together</h4>
-                <div class="contact-list">
-                    <li><i class='bx bxs-send'></i>akashadak00023@gmail.com</li>
-                    <li><i class="bx bxs-phone-call" ></i>8653026878</li>
-                </div>
+           
+                <div class="contact-text">
+                    <h2>Contact <span>Me</span></h2>
+                    <h4>Let's Work Together</h4>
+                    <div class="contact-list">
+                        <li><i class='bx bxs-send'></i>akashadak00023@gmail.com</li>
+                        <li><i class="bx bxs-phone-call" ></i>8653026878</li>
+                    </div>
+                    </div>
+            
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn-box">Send Message</button>
+                        <div class="success-message" id="successMessage"></div>
+                    </form>
+          
+         
+           
+               
                 <div class="contact-icons">
                     <a href="https://github.com/Akash-Adak" target="_blank"><i class='bx bxl-github'></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61550497406127"><i class='bx bxl-facebook'></i></a>
                     <a href="https://www.instagram.com/akashadak28/" target="_blank"><i class="bx bxl-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/akash-adak-b9334b2b9/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                 </div>
-            </div>
+            
             
         </section>
         
