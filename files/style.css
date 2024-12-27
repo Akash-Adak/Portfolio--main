@@ -28,6 +28,7 @@ body {
     overflow: hidden;
 }
 
+
 .logo {
     position: relative;
     font-size: 25px;
@@ -143,7 +144,7 @@ body {
 .btn-box {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: rgb(181, 219, 221);
     border-radius: 40px;
     font-size: 15px;
     text-align: center;
@@ -333,10 +334,10 @@ body {
 
 .Technical-bars .bar .progress-line {
     position: relative;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 100%;
-    height: 5px;
-    background-color: #000;
+    height: 8px;
+    background-color: #e0e0e0;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
@@ -351,6 +352,7 @@ body {
     transform: scaleX(0);
     transform-origin: left;
 }
+
 
 .progress-line.html span {
     width: 75%;
@@ -689,16 +691,22 @@ body {
 .contacts {
     display: grid;
     /*grid-template-columns: repeat (2, 1fr);*/
-    align-items: center;
+    align-items:center;
     gap: 3rem;
     padding: 40px;
     padding-top: 70px;
-    justify-content: center;
+    justify-content:center;
     background-color: #000;
 }
 
+
 .contact-text {
-    align-content: center;
+    /* align-content: center; */
+    padding: 40px;
+    /* background-color: #f9f9f9; Light background for contrast */
+    /* color: #333; Dark text for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-text h2 {
@@ -719,12 +727,7 @@ body {
     font-weight: 600;
 }
 
-/*.contact-text p{
-    color: rgb(177, 177, 177);
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 2rem;
-}*/
+
 .contact-list {
     margin-bottom: 3rem;
 }
@@ -772,7 +775,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 25px;
-    background: black;
+    /* background: black; */
     font-weight: 300;
     margin-top: 0px;
 }
@@ -1275,4 +1278,151 @@ body {
     .top i{
         color: #000;
     }
+}
+
+
+/* light theme */
+/* Light Theme Styles */
+.light-theme {
+    background-color: #ebe4e4; /* Background color for light theme */
+    color: black; /* Text color for light theme */
+}
+
+/* Navbar */
+.light-theme .header {
+    background: #f0f0f0; /* Light background for the header */
+}
+
+.light-theme .navbar a {
+    color: black; /* Text color for navbar links */
+}
+.light-theme .header a {
+    color: black; /* Text color for navbar links */
+}
+.light-theme .navbar a:hover {
+    color: #007bff; /* Hover color for navbar links */
+}
+
+/* Home Section */
+
+.light-theme .home {
+    background-color: #ebe4e4; /* Background color for home section */
+}
+
+.light-theme .home-content h1,
+.light-theme .home-content h3,
+.light-theme .home-content h4 {
+    color: black; /* Text color for headings */
+}
+
+/* About Section */
+.light-theme .about {
+    background-color: #ebe4e4; /* Background color for about section */
+}
+
+.light-theme .about-text p {
+    color: #333; /* Text color for about section paragraph */
+}
+
+/* Skills Section */
+
+ .light-theme .Technical-bars .bar .progress-line {
+    background-color: #191a1b; /* Progress bar color */
+ }
+.light-theme #Skills {
+    background-color: #ebe4e4; /* Background color for skills section */
+}
+
+.light-theme .subtitle span {
+    color: #007bff; /* Color for highlighted text in skills section */
+}
+
+/* Projects Section */
+.light-theme #Projects {
+    background-color: #ebe4e4; /* Background color for projects section */
+}
+
+.light-theme .main-text h2 {
+    color: black; /* Text color for project titles */
+}
+
+/* Services Section */
+.light-theme #Services {
+    background-color: #ebe4e4; /* Background color for services section */
+}
+
+/* Contacts Section */
+.light-theme .contacts {
+    background-color: #ebe4e4; /* Background color for contacts section */
+}
+
+.light-theme .contact-text h2,
+.light-theme .contact-text h4 {
+    color: black; /* Text color for contact section headings */
+}
+.light-theme .last-text{
+    color: black; /* Text color for contact section last text */
+    background-color:#ebe4e4 ;
+}
+
+/* Button Styles */
+.light-theme .btn-box,
+.light-theme .abtbtn-box {
+    background: #161617; /* Button background color */
+    color: white; /* Button text color */
+}
+
+/* .light-theme .btn-box:hover,
+.light-theme .abtbtn-box:hover {
+    background: #0056b3; 
+} */
+ 
+.light-theme .btn-box:hover {
+    box-shadow: 0 0 5px #c2b7b1   , 0 0 25px #c2b7b1   , 0 0 50pc #c2b7b1   , 0 0 100px #c2b7b1   , 0 0 200px #c2b7b1   ;
+}
+
+/* Footer */
+.light-theme .last-text p i{
+    color: black; /* Text color for footer */
+}
+
+/* Scroll to Top Button */
+.light-theme .top {
+    background: #007bff; /* Background color for scroll to top button */
+}
+
+.light-theme .top i {
+    color: rgb(9, 8, 8); /* Icon color for scroll to top button */
+}
+
+/* .contact-text {
+    padding: 40px;
+    background-color: #000;
+    color: white;
+} */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
 }
