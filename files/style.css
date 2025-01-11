@@ -157,9 +157,9 @@ body {
     animation-delay: calc(.2s * var(--i));
 }
 
-.btn-box:hover {
+/* .btn-box:hover {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
-}
+} */
 
 .img {
     display: inline-block;
@@ -957,7 +957,7 @@ body {
         content: "\a";
         white-space: pre;
     }
-
+   
     /*home*/
     .home{
         align-items: normal;
@@ -1137,7 +1137,21 @@ body {
         content: "\a";
         white-space: pre;
     }
-
+    .btn-box{
+        display: inline-block;
+        padding: 5px 10px;
+        /* background: rgb(181, 219, 221); */
+        border-radius: 40px;
+        font-size: 10px;
+        text-align: center;
+        /* color: #081b29; */
+        letter-spacing: 1px;
+        text-decoration: none;
+        /* font-weight: 600; */
+        opacity: 0;
+        /* animation: slideTop .5s ease forwards; */
+        animation-delay: calc(.2s * var(--i));
+        }
     /*home*/
     .home{
         width: 100%;
@@ -1164,9 +1178,9 @@ body {
         font-size: 15px;
         font-weight: 200;
     }
-    .btn-box:hover {
+    /* .btn-box:hover {
         box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-    }
+    } */
     .img{
         max-width: 300px;
         position: relative;
@@ -1361,25 +1375,42 @@ body {
     color: black; /* Text color for contact section headings */
 }
 .light-theme .last-text{
-    color: black; /* Text color for contact section last text */
+    color: rgb(31, 30, 30); /* Text color for contact section last text */
     background-color:#ebe4e4 ;
 }
 
 /* Button Styles */
+
 .light-theme .btn-box,
 .light-theme .abtbtn-box {
-    background: #161617; /* Button background color */
-    color: white; /* Button text color */
+    background: #2a2a2f; 
+    color: white; 
 }
 
+.light-theme .btn-box{
+    display: inline-block;
+    padding: 5px 10px;
+    /* background: rgb(181, 219, 221); */
+    border-radius: 40px;
+    font-size: 10px;
+    text-align: center;
+    /* color: #081b29; */
+    letter-spacing: 1px;
+    text-decoration: none;
+    /* font-weight: 600; */
+    opacity: 0;
+    /* animation: slideTop .5s ease forwards; */
+    animation-delay: calc(.2s * var(--i));
+
+}
 /* .light-theme .btn-box:hover,
 .light-theme .abtbtn-box:hover {
     background: #0056b3; 
 } */
  
-.light-theme .btn-box:hover {
+/* .light-theme .btn-box:hover {
     box-shadow: 0 0 5px #c2b7b1   , 0 0 25px #c2b7b1   , 0 0 50pc #c2b7b1   , 0 0 100px #c2b7b1   , 0 0 200px #c2b7b1   ;
-}
+} */
 
 /* Footer */
 .light-theme .last-text p i{
